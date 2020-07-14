@@ -8,15 +8,15 @@ This reporsitory is for rhythm-BERT, which is motivated by 'music is a kind of l
 Paper pending...
 
 ## File Organizations
-Folder *colab_pruned* is a medley of experiments.
-- *colab_pruned\data_folder* saves preprocessed data, including rhythm and chord dictionaries, Nottingham Dataset data in our formats. (Feel free to use pickle to read them, and you will get lists)
-- *colab_pruned\model_VQ_EC2_BERT* is the model in my paper Word Representation for Rhythms. Feel free to run the updated notebook! (Remember to change paths!)
-- *colab_pruned\Nottingham_database_preprocessing.ipynb* and *colab_pruned\data_loader_lib_trial.ipynb* are demos for using my data loader libs. You can get data in *colab_pruned\data_folder* by running those two files.
-- *colab_pruned\model_seq2seq_baseline*, *colab_pruned\model_seq2seq_attention*, *colab_pruned\model_transformer* and *colab_pruned\pitch_encoder_decoder* are my primitive trials. I just save them here for reference.
+Folder **colab_pruned** is a medley of experiments.
+- **colab_pruned\data_folder** saves preprocessed data, including rhythm and chord dictionaries, Nottingham Dataset data in our formats. (Feel free to use pickle to read them, and you will get lists)
+- **colab_pruned\model_VQ_EC2_BERT** is the model in my paper Word Representation for Rhythms. Feel free to run the updated notebook! (Remember to change paths!)
+- **colab_pruned\Nottingham_database_preprocessing.ipynb** and **colab_pruned\data_loader_lib_trial.ipynb** are demos for using my data loader libs. You can get data in **colab_pruned\data_folder** by running those two files.
+- **colab_pruned\model_seq2seq_baseline**, **colab_pruned\model_seq2seq_attention**, **colab_pruned\model_transformer** and **colab_pruned\pitch_encoder_decoder** are my primitive trials. I just save them here for reference.
 
-Folder *lib*:
-- *lib\data_loader* is for Nottingham Dataset preprocessing. It works, but it is still under maintain, because there are still a few bugs which do not matter greatly.
-- *lib\models* and *lib\utils* are segments of BERT notebook. Just for reading. Of course, you can import them for further use.
+Folder **lib**:
+- **lib\data_loader** is for Nottingham Dataset preprocessing. It works, but it is still under maintain, because there are still a few bugs which do not matter greatly.
+- **lib\models** and **lib\utils** are segments of BERT notebook. Just for reading. Of course, you can import them for further use.
 
 # rhythm-word-embedding commit logs
 This is for logging the research progressions of rhythm word embedding
