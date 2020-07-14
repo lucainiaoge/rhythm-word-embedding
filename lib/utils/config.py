@@ -1,12 +1,12 @@
 # Author: Lu Tongyu
 # Please modify the items for yourself
-# date: 20200707
+# date: 20200714
 
 class configurations(object):
     def __init__(self):
         self.batch_size = 1
-        self.emb_dim = 64 #64
-        self.splitted_dim_list = [16,8,40] #16,8,40
+        self.emb_dim = 64 # make sure that emb_dim/num_heads is an integer!
+        self.splitted_dim_list = [16,2,46]
         self.class_dim = self.splitted_dim_list[0]+self.splitted_dim_list[1]
 
         self.class_contents_int2class = {0:'controller',1:'4/4',2:'2/2',3:'3/4',4:'6/8',5:'5/4',6:'3/2',7:'2/4',8:'9/8',9:'12/8',10:'12/16',11:'6/4',12:'others'}
@@ -27,14 +27,14 @@ class configurations(object):
         self.num_steps = 20000
         self.store_steps = 4000
         self.summary_steps = 1000
-        self.mask_prob = 0.5 #0.15
+        self.mask_prob = 0.2 #0.5
         self.head_len = 10
         self.bias_tokens_n = 20
         self.vq_vocab_size_factor = 5
         self.sampling = True
         self.load_model = False
-        self.store_model_path = "/"
-        self.load_model_path = "/model_"+str(self.num_steps)
-        self.data_path = "/data_folder/"
+        self.store_model_path = "/" #Please change the path for your environment
+        self.load_model_path = "/model_"+str(self.num_steps) #Please change the path for your environment
+        self.data_path = "/data_folder/" #Please change the path for your environment
 
 config = configurations()
