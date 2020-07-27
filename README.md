@@ -5,8 +5,6 @@ This reporsitory is for rhythm-BERT, which is motivated by 'music is a kind of l
 - Colab link: https://drive.google.com/file/d/1PVrc_6QE-XM7rIpDUvYwPoOOAYVkOvtW/view?usp=sharing 
 - Link of MIDI baselines mentioned in research proposals: https://drive.google.com/drive/folders/13eD6yUhjdHz639thV6LQQaKxKpVOZdVR?usp=sharing
 
-Paper pending...
-
 ## File Organizations
 Folder **colab_pruned** is a medley of experiments.
 - **colab_pruned\data_folder** saves preprocessed data, including rhythm and chord dictionaries, Nottingham Dataset data in our formats. (Feel free to use pickle to read them, and you will get lists)
